@@ -5,7 +5,6 @@ use axum::{
     routing::{get, post},
     Json, Router,
 };
-use num_format::{Locale, ToFormattedString};
 use serde::Serialize;
 use std::{net::SocketAddr, time::Duration};
 use sysinfo::{CpuExt, System, SystemExt};
@@ -28,7 +27,7 @@ async fn main() {
         .unwrap();
 }
 
-async fn root() -> &'static str {
+async fn root() -> &'static str {git 
     "Hello, World!"
 }
 
